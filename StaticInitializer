@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class StaticInitializer
+{
+static boolean flag = true; 
+static int b,h;
+static
+{
+Scanner scan = new Scanner(System.in);
+b= scan.nextInt();
+scan.nextLine();
+h= scan.nextInt();
+if(b>0 && h>0)
+{
+flag = true;
+}
+else if(b<=0 || h<=0)
+{
+flag=false;
+System.out.println("java.lang.Exception: breadth and height must be positive");
+}
+}
+public static void main(String[] args)
+{
+if(flag)
+{
+int area=b*h;
+System.out.println(area);
+}   
+}
+}

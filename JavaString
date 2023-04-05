@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+public class JavaString
+{
+public static void main(String[] args) 
+{
+Scanner sc=new Scanner(System.in);
+String A=sc.next();
+String B=sc.next();
+int length=A.length();
+int length1=B.length();
+System.out.println(A.length()+B.length());
+if(length>length1)
+{
+System.out.println("NO");
+}
+else
+{
+System.out.println("yes");
+}
+String str = "hello world!";
+String output = str.substring(0,1).toUpperCase() + str.substring(1);
+System.out.println(output);
+}
+}
